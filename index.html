@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teja's Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- External Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white font-sans">
+
+  <!-- Sidebar Navigation -->
+  <aside class="fixed left-0 top-0 h-full w-16 bg-gray-900 flex flex-col items-center pt-10 space-y-6 shadow-lg">
+    <a href="#home" class="text-xl text-gray-400 hover:text-yellow-400"><i class="fas fa-home"></i></a>
+    <a href="#about" class="text-xl text-gray-400 hover:text-yellow-400"><i class="fas fa-user"></i></a>
+    <a href="#skills" class="text-xl text-gray-400 hover:text-yellow-400"><i class="fas fa-code"></i></a>
+    <a href="#education" class="text-xl text-gray-400 hover:text-yellow-400"><i class="fas fa-graduation-cap"></i></a>
+    <a href="#projects" class="text-xl text-gray-400 hover:text-yellow-400"><i class="fas fa-briefcase"></i></a>
+    <a href="#contact" class="text-xl text-gray-400 hover:text-yellow-400"><i class="fas fa-envelope"></i></a>
+  </aside>
+<!-- Home Section -->
+<section id="home" class="h-screen flex flex-col md:flex-row items-center justify-center text-center px-6 ml-16">
+  <div class="md:w-1/2" data-aos="fade-right">
+    <!-- Scrolling Text Effect -->
+    <div class="w-full overflow-hidden whitespace-nowrap">
+      <h2 class="text-5xl font-bold mb-4 inline-block animate-scroll">
+        Hello, I'm <span class="text-yellow-400">Teja</span>
+      </h2>
+    </div>
+
+    <p class="text-lg">A passionate developer creating modern and interactive web experiences.</p>
+    <p class="mt-4 text-gray-300">I specialize in frontend and backend development, ensuring seamless user experiences.</p>
+  </div>
+
+  <!-- Profile Image Section -->
+  <div class="md:w-1/2 mt-6 md:mt-0 flex flex-col items-center" data-aos="fade-left">
+    <img src="your-photo.jpg" alt="Teja's Photo" class="rounded-full w-64 h-64 mx-auto shadow-lg">
+    <div class="mt-4 flex space-x-4">
+      <a href="https://github.com/teja2605" target="_blank" class="text-2xl hover:text-yellow-400"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/teja-vsai/" target="_blank" class="text-2xl hover:text-yellow-400"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:tejachowadry364@gmail.com" class="text-2xl hover:text-yellow-400"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes scrollText {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .animate-scroll {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 8s linear infinite;
+  }
+</style>
+  <!-- About Me Section -->
+  <section id="about" class="py-20 text-center ml-16">
+    <h2 class="text-4xl font-bold mb-6">About Me</h2>
+    <p class="text-lg w-3/4 mx-auto text-gray-300">I am a 3rd-year student specializing in software development. I have a passion for creating efficient and scalable web applications. My focus is on writing clean, maintainable, and optimized code.</p>
+    <div class="mt-6">
+      <a href="resume.pdf" download="Teja_Resume.pdf" 
+        class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 font-bold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+        <i class="fas fa-download mr-2"></i> Download Resume
+      </a>
+    </div>
+    
+    </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 text-center ml-16">
+    <h2 class="text-4xl font-bold mb-6">Skills</h2>
+    <div class="w-3/4 mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col items-center">
+        <i class="fas fa-code text-yellow-400 text-4xl mb-4"></i>
+        <p>HTML, CSS, JavaScript</p>
+      </div>
+      <div class="p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col items-center">
+        <i class="fas fa-server text-blue-400 text-4xl mb-4"></i>
+        <p>Node.js, Express.js</p>
+      </div>
+      <div class="p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col items-center">
+        <i class="fas fa-database text-green-400 text-4xl mb-4"></i>
+        <p>MongoDB, MySQL</p>
+      </div>
+      <div class="p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col items-center">
+        <i class="fas fa-brain text-red-400 text-4xl mb-4"></i>
+        <p>Machine Learning</p>
+      </div>
+    </div>
+  </section>
+<!-- Education Section -->
+<section id="education" class="py-20 text-center ml-16">
+  <h2 class="text-4xl font-bold mb-6">Education</h2>
+  <div class="w-3/4 mx-auto space-y-6">
+    
+    <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+      <h3 class="text-xl font-bold text-yellow-400">K L University</h3>
+      <p class="text-gray-300">B.Tech - 3rd Year</p>
+      <p class="text-gray-400">CGPA: 8.8</p>
+    </div>
+
+    <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+      <h3 class="text-xl font-bold text-yellow-400">NRI Junior College</h3>
+      <p class="text-gray-300">MPC Stream</p>
+      <p class="text-gray-400">Percentage: 66%</p>
+    </div>
+
+    <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+      <h3 class="text-xl font-bold text-yellow-400">Sri Rama English Medium School</h3>
+      <p class="text-gray-300">Class 10</p>
+      <p class="text-gray-400">Percentage: 93%</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 text-center ml-16">
+  <h2 class="text-4xl font-bold mb-6">Projects</h2>
+  <div class="w-3/4 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+    
+    <div class="p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col items-center">
+      <i class="fas fa-tasks text-yellow-400 text-4xl mb-4"></i>
+      <h3 class="text-xl font-bold text-yellow-400">Task Manager</h3>
+      <p class="text-gray-300">A web app for task management built with React and Firebase.</p>
+      <a href="https://github.com/teja2605/task-manager" target="_blank" class="text-blue-400 mt-2 hover:underline">View Project</a>
+    </div>
+
+    <div class="p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col items-center">
+      <i class="fas fa-chart-line text-blue-400 text-4xl mb-4"></i>
+      <h3 class="text-xl font-bold text-yellow-400">ML House Prediction</h3>
+      <p class="text-gray-300">A machine learning model predicting house prices using Python.</p>
+      <a href="https://github.com/teja2605/house-prediction" target="_blank" class="text-blue-400 mt-2 hover:underline">View Project</a>
+    </div>
+
+    <div class="p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col items-center">
+      <i class="fas fa-lock text-red-400 text-4xl mb-4"></i>
+      <h3 class="text-xl font-bold text-yellow-400">Secure Authentication System</h3>
+      <p class="text-gray-300">A secure login system with JWT authentication in Node.js.</p>
+      <a href="https://github.com/teja2605/auth-system" target="_blank" class="text-blue-400 mt-2 hover:underline">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 text-center ml-16">
+  <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
+  <p class="text-lg">📧 Email: <span class="text-yellow-400">tejachowadry364@gmail.com</span></p>
+  <p class="text-lg">📞 Phone: <span class="text-yellow-400">8074446581</span></p>
+
+  <!-- Contact Form -->
+  <form action="mailto:tejachowadry364@gmail.com" method="POST" enctype="text/plain" class="mt-6 w-3/4 mx-auto">
+    <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 bg-gray-800 rounded-lg" required>
+    <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 bg-gray-800 rounded-lg" required>
+    <textarea name="message" placeholder="Your Message" class="w-full p-3 mb-4 bg-gray-800 rounded-lg" required></textarea>
+    <button type="submit" class="bg-yellow-400 text-gray-900 font-bold py-2 px-6 rounded-lg hover:bg-yellow-500 transition">
+      Send Message
+    </button>
+  </form>
+
+  <!-- Social Media Links (Neatly below the form) -->
+  <div class="mt-8 flex justify-center space-x-6">
+    <a href="https://github.com/teja2605" target="_blank" class="text-3xl text-gray-400 hover:text-yellow-400 transition">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/teja-vsai/" target="_blank" class="text-3xl text-gray-400 hover:text-yellow-400 transition">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:tejachowadry364@gmail.com" class="text-3xl text-gray-400 hover:text-yellow-400 transition">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://twitter.com/" target="_blank" class="text-3xl text-gray-400 hover:text-yellow-400 transition">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </div>
+</section>
+
+
+
+
+  <!-- AOS & GSAP Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>
