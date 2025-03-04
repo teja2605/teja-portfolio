@@ -3,7 +3,7 @@
 Welcome to my personal portfolio! This website showcases my **skills, projects, education, and contact information**.
 
 ## 🌟 Live Demo
-🔗 [View Portfolio](your-live-link-here) *(Replace with actual link)*
+🔗 [View Portfolio](https://teja-portfolio-mauve.vercel.app/)  
 
 ## 📌 About Me
 I am a **3rd-year software development student** with a passion for building **efficient, scalable, and interactive web applications**. My focus is on writing **clean, maintainable, and optimized code**.
@@ -53,9 +53,8 @@ Open index.html in your browser.
 🌍 Deployment Guide
 To deploy the portfolio online:
 
-Use GitHub Pages (for static hosting)
-Netlify or Vercel (for easy deployment)
-Custom Domain (via domain providers like Namecheap, GoDaddy)
+Deployed on Vercel: Teja's Portfolio
+Other Hosting Options: GitHub Pages, Netlify, or Custom Domain.
 📬 Contact Me
 📧 Email: tejachowadry364@gmail.com
 🔗 LinkedIn: Teja VSai
